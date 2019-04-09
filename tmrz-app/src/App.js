@@ -7,6 +7,11 @@ import reducers from './reducers';
 import logo from './logo.svg';
 import './App.css';
 
+import NewTimer from './components/new-timer'
+
+import ListTimers from './components/list-timers'
+
+
 const store = createStore(reducers);
 
 class App extends Component {
@@ -19,9 +24,8 @@ class App extends Component {
               Welcome to React
             </h1>
           </header>
-          <p className="App-intro">
-            tmrz
-          </p>
+            <NewTimer />
+            <ListTimers />
         </div>
       </Provider>
     );
